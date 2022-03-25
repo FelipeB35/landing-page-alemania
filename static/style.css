@@ -1,9 +1,36 @@
+
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  height: 5000;
+  position: absolute; /* Assist "position: absolute" below */
+  padding-top: 150px; /* Must match header height; make up for header being removed from the document flow */
+  padding-bottom: 60px; /* Must match footer height; make up for footer being removed from the document flow */
+  min-height: 100%; /* Force body to be at least the size of the screen */
+  background: whitesmoke; /* Backup color */
+  /* background: url(http://i.stack.imgur.com/OVOg3.jpg) no-repeat center center fixed;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+html {
+  height: 100%;
+}
+
+.FLAG {
+  height: 50px;
+  width: 100px;
 }
 
 header {
@@ -11,6 +38,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: rgb(148, 101, 0);
+}
+
+.ImgAlusivas{
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 header .container {
@@ -28,23 +61,63 @@ header .container {
   padding-right: 128px;
 }
 
-header .container h2 {
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 900;
-}
-
-header .container nav {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 16px;
-  -ms-grid-columns: (auto)[4];
-      grid-template-columns: repeat(4, auto);
-}
-
-header .container nav a {
-  color: inherit;
-  font-size: 20px;
+a {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
   text-decoration: none;
 }
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: brown;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 /*# sourceMappingURL=style.css.map */
