@@ -44,6 +44,7 @@ header {
 .ImgAlusivas{
   padding-top: 32px;
   padding-bottom: 32px;
+  border: 8px solid#FFC300;
 }
 
 header .container {
@@ -71,7 +72,7 @@ a {
 
 
 div.gallery {
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
 }
 
 div.gallery:hover {
@@ -118,6 +119,38 @@ div.desc {
   display: table;
   clear: both;
 }
+
+.MainStats {
+  font-size: 35px;
+  color: black;
+  padding: 50px;
+  border: 8px solid#FFC300;
+}
+
+td {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Subheaders{
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.EconomicStats {
+  font-size: 35px;
+  color: black;
+  padding: 50px;
+  border: 8px solid#FFC300;
+}
+
+
+.form {
+  font-size: 25px;
+  color: black;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
