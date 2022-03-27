@@ -91,6 +91,11 @@ div.desc {
   color: brown;
 }
 
+.foto {
+  height: auto;
+  width: 50px;
+}
+
 * {
   box-sizing: border-box;
 }
